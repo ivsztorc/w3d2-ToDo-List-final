@@ -1,16 +1,30 @@
+<!-- ADD NEW ITEM -->
+<form method='post' action='/items'>
+<div class="hbox">
+  <div>
+    <label for='item'>Item:</label>
+    <input id='item' name='item' type='text' autofocus>
+  </div>
+  <div>
+    <label for='details'>Details:</label>
+    <input id='details' name='details'></input>
+  </div>
+  <button class="add">Add Task</button>
+</div>
+</form>
+
+<!-- ENDADD NEW ITEM -->
+
+<!-- TODO LIST -->
 <section>
-  <% @items.each do |item| %>
-  <article>
-    <dl>
-      <dt>Item: </dt>
-      <dd><%= item['item'] %></dd>
-    </dl>
-    <a href="/items/<%= item['id'] %>">show</a>
-    <a href="/items/<%= item['id'] %>/edit">edit</a>  
-    </article>
+<ul>
+  <% @items.reverse_each do |item| %>
+  <li>
+      <em><%= item['item'] %></em>
+      <%= item['details'] %>
+        <a class="edit" href="/items/<%= item['id'] %>/edit">edit</a>  
+    </li>
 <% end %>
+</ul>
 </section>
-
-
-  
-
+<!-- END TODO LIST -->
