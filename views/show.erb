@@ -1,12 +1,11 @@
+<h2 class="center">Updated successfuly!</h2>
 <section>
-  <article>
-    <dl>
-      <dt>Item: </dt>
-      <dd><%= @item['item'] %></dd>
-    </dl>
-    <dl>
-      <dt>Details: </dt>
-      <dd><%= @item['details'] %></dd>
-    </dl>
-  </article>
+  <ul>
+    <li>
+        <em><%= @item['item'] %></em>
+        <%= @item['details'] %>
+    </li>
+  </ul>
 </section>
+
+<a class="center" href="/items">Back to my list</a>

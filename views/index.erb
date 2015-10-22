@@ -1,4 +1,5 @@
 <!-- ADD NEW ITEM -->
+<h1>ToDo!</h1>
 <form method='post' action='/items'>
 <div class="hbox">
   <div>
@@ -22,7 +23,7 @@
   <li>
       <em><%= item['item'] %></em>
       <%= item['details'] %>
-        <a class="edit" href="/items/<%= item['id'] %>/edit">edit</a>  
+        <a class="edit" href="/items/<%= item['id'] %>/edit">Edit</a>  
     </li>
 <% end %>
 </ul>

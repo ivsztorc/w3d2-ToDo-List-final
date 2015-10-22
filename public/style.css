@@ -4,7 +4,21 @@ body {
     padding: 0;
     margin: 0;
 }
-
+.center{
+    display: block;
+    margin: 1em 0;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+h2{
+    color: #80A8A8;
+}
 form {
     width: 100%;
     background-color: #FF0D51;
@@ -40,8 +54,12 @@ button {
     border:0;
     padding: 11px;
 }
+button:hover{
+    cursor: pointer;
+}
 
 ul {
+    box-shadow: 0 10px 10px #cdcdcd;
     max-width: 48em;
     margin: 0 auto;
     padding: 0;
@@ -56,16 +74,20 @@ li {
     color: #a3a3a3;
     min-height: 1em;
 }
+li:hover{
+    background-color: #fff;
+}
 em {
     font-style: normal;
     font-weight: 700;
+    text-transform: capitalize;
     color: #333;
 }
 
 a {
     font-weight: 400;
     text-decoration: none;
-    color: white;
+    color: #FF0D51;
     text-align: center;
 }
 
@@ -77,6 +99,24 @@ a {
     float: right;
     padding: .6em 1em;
 }
+.add,
+.update {
+    background-color: #80A8A8;
+    margin-top: 15px;
+}
+.add:hover,
+.update:hover {
+    background-color: #a8c4c4;
+    color: #334b4b;
+}
+
+.edit {
+    background: #A88C8C;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
 
 .delete {
     background-color: #fff;
@@ -86,30 +126,12 @@ a {
     margin: 0 auto;
     width: 200px;
 }
-.add {
-    background-color: #80A8A8;
-    margin-top: 15px;
-}
 
-.edit {
-    background: #A88C8C;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-.update {
-    background-color: #80A8A8;
-    margin-top: 15px;
+.edit:hover{
+    background: #926f6f;
 }
 
 label {
     color: white;
 }
 
-dt {
-    padding-left: 80px;
-}
-
-dd {
-    padding-left: 80px;
-}

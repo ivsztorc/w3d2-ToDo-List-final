@@ -1,7 +1,9 @@
+<a class="center" href="/items">Back to my list</a>
+
 <form method="post" action="/items/<%= @item['id'] %>">
   <div class="hbox">
     <div>
-      <label for='item'>Item:</label></dt>
+      <label for='item'>Item:</label>
       <input id='item' name='item' type='text' autofocus value="<%= @item['item'] %>">
     </div>
     <div>
@@ -12,5 +14,5 @@
   </div>
 </form>
 <form class="delete_form" method="post" action="/items/<%= @item['id'] %>/delete">
-  <button class="delete">delete</button>
+  <button class="delete">Delete</button>
 </form>
